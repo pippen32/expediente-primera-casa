@@ -1,0 +1,128 @@
+<!doctype html>
+<html lang="es">
+<head>
+<meta charset="utf-8"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>Expediente Primera Casa — Consultoría Omar Cruz</title>
+<meta name="description" content="El lender te pidió un paquete de documentos y nosotros te armamos el expediente completo y ordenado por secciones: $79 base, $149 familia completa. Hyattsville, MD."/>
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,600;9..144,800;9..144,900&family=Public+Sans:wght@400;600;700;800&display=swap" rel="stylesheet">
+<style>
+/* FAMILIA VISUAL: «ARCHIVADOR DOMÉSTICO» — patrón de lectura de índice con pestañas de carpeta:
+   navegación lateral por separadores numerados, el contenido se lee como secciones de un archivador.
+   Tipografía: Fraunces (serif editorial cálida) + Public Sans. Color: verde salvia, crema cálida, terracota suave.
+   Distinta a MHIC «Expediente» (azul marino/Libre Franklin), Dispatch «Manifiesto de Ruta» (Archivo/Space Mono, asfalto/ámbar) y Real Estate. */
+:root{--bg:#f6f1e7;--paper:#fffdf8;--sage:#476553;--sage2:#2f4a3a;--terra:#c05f33;--cream:#efe6d3;--ink:#223128;--muted:#66736a;--line:#ddd2ba;--red:#9e2b1f;--redbg:#fbeae6;--gold:#8a6d1f}
+*{box-sizing:border-box}html{scroll-behavior:smooth}body{margin:0;background:var(--bg);color:var(--ink);font-family:"Public Sans",system-ui,sans-serif;font-size:16.5px;line-height:1.65}
+h1,h2,h3{font-family:"Fraunces",Georgia,serif;line-height:1.12}
+.top{background:var(--sage2);color:#fff}.top-in{max-width:1120px;margin:auto;padding:10px 20px;display:flex;justify-content:space-between;gap:12px;flex-wrap:wrap}.top a{color:#fff;font-weight:800;text-decoration:none}
+.layout{max-width:1120px;margin:auto;display:grid;grid-template-columns:230px 1fr;gap:28px;padding:26px 20px 10px}
+nav.tabs{position:sticky;top:18px;align-self:start;display:flex;flex-direction:column;gap:8px}
+nav.tabs a{background:var(--paper);border:1px solid var(--line);border-left:10px solid var(--sage);padding:12px 14px;border-radius:0 10px 10px 0;text-decoration:none;color:var(--ink);font-weight:700;font-size:.92rem}
+nav.tabs a:nth-child(2){border-left-color:var(--terra)}nav.tabs a:nth-child(3){border-left-color:#b98a2f}nav.tabs a:nth-child(4){border-left-color:#6b7f9e}nav.tabs a:nth-child(5){border-left-color:#7a5a8a}
+.hero{background:var(--paper);border:1px solid var(--line);border-radius:16px;padding:34px 32px;box-shadow:0 12px 30px rgba(34,49,40,.08)}
+.shieldrow{display:flex;gap:14px;align-items:center}.brand{font-weight:900;text-transform:uppercase;letter-spacing:.04em}.sub{font-size:.75rem;letter-spacing:.12em;text-transform:uppercase;color:var(--muted)}
+.kicker{color:var(--terra);font-weight:800;letter-spacing:.13em;text-transform:uppercase;font-size:.78rem}
+h1{font-size:clamp(2.1rem,5vw,3.4rem);margin:.3em 0}.hl{color:var(--sage);text-decoration:underline;text-decoration-color:#e8b48a;text-decoration-thickness:.18em;text-underline-offset:.12em}
+.lede{font-size:1.12rem;color:#3d4a42;max-width:62ch}.btn{display:inline-flex;min-height:52px;align-items:center;padding:13px 24px;border-radius:999px;font-weight:800;text-decoration:none;border:2px solid var(--sage2);margin:6px 8px 6px 0}.btn-p{background:var(--sage);color:#fff}.btn-g{color:var(--sage2);background:transparent}
+section{padding:34px 0 6px}h2{font-size:clamp(1.5rem,3.4vw,2rem);margin:0 0 8px}.secsub{color:#46544b;max-width:66ch}
+.card{background:var(--paper);border:1px solid var(--line);border-radius:14px;padding:8px 22px;box-shadow:0 8px 22px rgba(34,49,40,.06)}
+.card li,.docrow{padding:15px 0;border-bottom:1px dashed var(--line);list-style:none}.card ul{margin:0;padding:0}.card li:last-child{border-bottom:none}
+.check{color:var(--sage);font-weight:900}.tag{background:var(--cream);border:1px solid var(--line);border-radius:999px;padding:2px 9px;font-size:.7rem;font-weight:800;letter-spacing:.06em;text-transform:uppercase}
+.example{background:#f2ecdc;border:2px dashed var(--gold);border-radius:12px;padding:18px 22px}.example h3{margin-top:6px}
+.grid{display:grid;grid-template-columns:1fr 1fr;gap:16px}.price{background:var(--paper);border:1px solid var(--line);border-radius:14px;padding:24px}.price.featured{border:3px solid var(--sage)}.amt{font-family:"Fraunces",serif;font-size:2.6rem;font-weight:900}.price ul{padding-left:18px}
+.honest{border:2.5px solid var(--red);background:var(--redbg);border-radius:14px;padding:24px}.honest h2{color:var(--red)}
+details{background:var(--paper);border:1px solid var(--line);border-radius:12px;margin-bottom:10px;padding:16px 20px}summary{cursor:pointer;font-weight:800}
+form{background:var(--paper);border:1px solid var(--line);border-radius:14px;padding:24px}label{font-weight:700;display:block;margin:14px 0 6px}input,select,textarea{width:100%;min-height:50px;padding:12px;font:inherit;border:1.5px solid #bdb49c;border-radius:10px;background:#fff}textarea{min-height:110px}.submit{width:100%;background:var(--terra);color:#fff;border:none;min-height:56px;border-radius:999px;font:inherit;font-weight:900;font-size:1.05rem;cursor:pointer;margin-top:18px}
+footer{max-width:1120px;margin:30px auto;padding:20px;font-size:.92rem;color:var(--muted)}
+@media(max-width:760px){.layout{grid-template-columns:1fr}nav.tabs{position:static;flex-direction:row;overflow:auto}nav.tabs a{white-space:nowrap}.grid{grid-template-columns:1fr}.hero{padding:24px 18px}}
+</style>
+</head>
+<body>
+<div class="top"><div class="top-in"><span>Hyattsville, Maryland · Atención en español</span><a href="tel:+12406590154">☎ 240-659-0154</a></div></div>
+<div class="layout">
+<nav class="tabs" aria-label="Índice del archivador">
+<a href="#pide">A · Lo que pide el lender</a><a href="#incluye">B · Qué armamos</a><a href="#ejemplo">C · Ejemplo del expediente</a><a href="#precios">D · Precios $79 / $149</a><a href="#proceso">E · El proceso</a><a href="#faq">F · Preguntas</a><a href="#solicitud">G · Solicitud</a>
+</nav>
+<main>
+<header class="hero">
+<div class="shieldrow"><svg width="46" height="50" viewBox="0 0 44 48" aria-hidden="true"><path d="M22 1 41 7v13c0 12.5-8 21.5-19 26C11 41.5 3 32.5 3 20V7Z" fill="#2f4a3a"/><path d="M22 4.5 38 9.7V20c0 10.8-6.7 18.8-16 23C12.7 38.8 6 30.8 6 20V9.7Z" fill="none" stroke="#e8b48a" stroke-width="1.6"/><text x="22" y="24" text-anchor="middle" font-family="Georgia" font-weight="900" font-size="13" fill="#fff">OC</text><text x="22" y="35" text-anchor="middle" font-size="6" fill="#e8b48a">MD · USA</text></svg><div><div class="brand">Consultoría Omar Cruz</div><div class="sub">Organización de documentos · Hyattsville, MD</div></div></div>
+<p class="kicker">Servicio secretarial · Primera casa</p>
+<h1>Tu expediente de primera casa, <span class="hl">completo y en orden</span> pa' entregarlo al lender.</h1>
+<p class="lede">El lender te pidió un paquete: talones de pago, taxes, estados de cuenta, identificaciones, cartas de explicación. Sueltos, eso es un reguero. <strong>Nosotros organizamos, transcribimos y armamos tu expediente completo, sección por sección</strong>, pa' que lo entregues una sola vez, sin que te devuelvan por papeles faltantes o desordenados.</p>
+<a class="btn btn-p" href="#solicitud">Armar mi expediente — $79</a><a class="btn btn-g" href="#precios">Ver precios</a>
+<p><strong>Precio claro:</strong> $79 expediente base · $149 con sesión de organización de documentos de la pareja / familia completa. Sin cargos escondidos.</p>
+</header>
+
+<section id="pide"><h2>A · Lo que el lender suele pedir</h2><p class="secsub">Cada lender pide su lista, pero el paquete casi siempre trae lo mismo. Tu trabajo es traer los documentos; el nuestro es dejarlos en orden:</p>
+<div class="card"><ul>
+<li><span class="check">✓</span> <strong>Talones de pago</strong> recientes de cada solicitante</li>
+<li><span class="check">✓</span> <strong>Taxes</strong> — declaraciones de los años que pida el lender, con sus W-2 / 1099</li>
+<li><span class="check">✓</span> <strong>Estados de cuenta</strong> bancarios, en orden de fechas</li>
+<li><span class="check">✓</span> <strong>Identificaciones</strong> vigentes de cada solicitante</li>
+<li><span class="check">✓</span> <strong>Cartas de explicación</strong> — transcritas con lo que tú dictas, listas pa' firmar</li>
+<li><span class="check">✓</span> <strong>Comprobantes adicionales</strong> que tu lender incluya en su lista</li>
+</ul></div></section>
+
+<section id="incluye"><h2>B · Qué armamos por ti</h2><div class="card"><ul>
+<li><strong>Revisión de la lista del lender, punto por punto</strong> — marcamos qué tienes y qué te falta.</li>
+<li><strong>Organización por secciones</strong> con separadores e índice: ingresos, taxes, banco, identificación, cartas.</li>
+<li><strong>Transcripción de cartas de explicación</strong> con tus palabras, tal como las dictas.</li>
+<li><strong>Copias ordenadas y legibles</strong>, en el orden en que el lender las pidió.</li>
+<li><strong>Índice final del expediente</strong> — una portada que dice qué trae cada sección y cuántas páginas.</li>
+<li><strong>Revisión final contigo</strong> antes de que lo entregues: lo que falte, se señala antes, no después.</li>
+</ul></div></section>
+
+<section id="ejemplo"><h2>C · Así se ve el expediente armado</h2><p class="secsub">Prueba visible del producto: un expediente organizado por secciones, como el que recibirías.</p>
+<div class="example"><span class="tag">Ejemplo ilustrativo</span>
+<h3>Expediente — Familia Ejemplo (datos ficticios)</h3>
+<p><strong>Sección 1 · Identificación:</strong> licencia de conducir de «María Ejemplo» y «José Ejemplo» — 2 páginas.<br>
+<strong>Sección 2 · Ingresos:</strong> talones de pago de las últimas 4 quincenas de ambos — 8 páginas, en orden de fecha.<br>
+<strong>Sección 3 · Taxes:</strong> declaraciones de 2 años con W-2 — 14 páginas.<br>
+<strong>Sección 4 · Banco:</strong> estados de cuenta de 2 meses, cuenta terminada en 0000 (ficticia) — 6 páginas.<br>
+<strong>Sección 5 · Cartas de explicación:</strong> carta transcrita y firmada sobre un depósito — 1 página.<br>
+<strong>Índice:</strong> portada con el contenido de cada sección y el total: 31 páginas, expediente completo ✓</p>
+<p><em>EJEMPLO ILUSTRATIVO — todos los nombres, cuentas y datos de esta muestra son ficticios; tu expediente se arma con tu información real.</em></p></div></section>
+
+<section id="precios"><h2>D · Precios</h2><div class="grid">
+<article class="price featured"><p class="tag">Expediente base</p><div class="amt">$79</div><p>Pago único</p><ul><li>Un solicitante</li><li>Organización por secciones + índice</li><li>Transcripción de 1 carta de explicación</li><li>Revisión final contigo</li></ul><a class="btn btn-p" href="#solicitud">Quiero el base — $79</a></article>
+<article class="price"><p class="tag">Pareja / familia completa</p><div class="amt">$149</div><p>Pago único</p><ul><li>Sesión de organización de documentos de la pareja / familia completa</li><li>Documentos de todos los solicitantes, en un solo expediente</li><li>Transcripción de cartas de cada solicitante</li><li>Índice completo y revisión final</li></ul><a class="btn btn-g" href="#solicitud">Quiero el familiar — $149</a></article>
+</div><p>El cobro es solo por organizar, transcribir y armar el expediente. No incluye ningún cargo del lender, del banco ni de ninguna agencia.</p></section>
+
+<section id="proceso"><h2>E · El proceso, en 5 pasos</h2><div class="card"><ul>
+<li><strong>1. Llenas el formulario</strong> y nos dices qué te pidió tu lender. <em>(Tú · 3 minutos)</em></li>
+<li><strong>2. Te contactamos</strong> y revisamos la lista: qué tienes y qué te falta.</li>
+<li><strong>3. Traes o envías tus documentos</strong> y dictas tus cartas de explicación.</li>
+<li><strong>4. Armamos el expediente</strong> por secciones, con índice y copias en orden.</li>
+<li><strong>5. Revisión final contigo y tú lo entregas</strong> a tu lender. La entrega y todo el trámite del préstamo lo haces tú, directo con tu lender.</li>
+</ul></div></section>
+
+<section id="faq"><h2>F · Preguntas frecuentes</h2>
+<details><summary>¿Ustedes me ayudan a conseguir la aprobación del préstamo?</summary><p><strong>No.</strong> No garantizamos aprobación de ningún préstamo. La aprobación la decide únicamente tu lender. Nuestro trabajo es que el paquete de documentos que tú entregas vaya completo, ordenado y legible.</p></details>
+<details><summary>¿Ustedes llenan o someten mi aplicación del préstamo?</summary><p><strong>No.</strong> No llenamos ni sometemos la aplicación del préstamo por el cliente, no cotizamos préstamos y no asesoramos sobre hipotecas, tasas ni productos de préstamo. Transcribimos y organizamos los documentos que tú nos das y dictas.</p></details>
+<details><summary>¿Qué diferencia hay entre el de $79 y el de $149?</summary><p>El de $79 arma el expediente de un solicitante. El de $149 incluye la sesión de organización de documentos de la pareja o la familia completa: los papeles de todos los solicitantes quedan en un solo expediente ordenado.</p></details>
+<details><summary>¿Y si me falta un documento de la lista?</summary><p>Te lo marcamos en la revisión, con el nombre exacto de lo que falta, pa' que lo consigas. No fabricamos documentos ni datos: el expediente se arma solo con tus documentos reales.</p></details>
+<details><summary>¿Mis documentos quedan guardados con ustedes?</summary><p>Trabajamos con los documentos que traes pa' armar tu expediente. Al enviar el formulario aceptas que te contactemos sobre este servicio; no vendemos tus datos.</p></details>
+</section>
+
+<section><div class="honest"><h2>⚠ La línea legal, clara y visible</h2>
+<p>La <strong>Consultoría Omar Cruz</strong> es un servicio privado de <strong>organización, transcripción y logística de documentos</strong>: Omar organiza y transcribe lo que el cliente dicta y entrega.</p>
+<p><strong>Omar NO asesora hipotecas, NO cotiza préstamos, NO llena ni somete la aplicación del préstamo por el cliente y NO garantiza aprobación.</strong> Esto <strong>no es asesoría legal</strong> ni asesoría financiera; Omar Cruz no es abogado ni lender ni broker hipotecario. Todo el trámite del préstamo — aplicación, cotización, decisión y cierre — lo haces tú directamente con tu lender.</p></div></section>
+
+<section id="solicitud"><h2>G · Solicitud</h2>
+<form action="https://formsubmit.co/leydelswing@gmail.com" method="POST">
+<input type="hidden" name="_subject" value="Nueva solicitud — Expediente Primera Casa"><input type="hidden" name="_cc" value="swingbravo@gmail.com"><input type="hidden" name="_template" value="table"><input type="hidden" name="_captcha" value="false">
+<label>Nombre completo *<input name="Nombre completo" required autocomplete="name" placeholder="Tal como aparece en tu identificación"></label>
+<label>Teléfono *<input name="Teléfono" type="tel" required autocomplete="tel" placeholder="(240) 000-0000"></label>
+<label>Correo electrónico *<input name="Correo electrónico" type="email" required autocomplete="email" placeholder="tunombre@correo.com"></label>
+<div class="grid"><div><label>¿Quiénes solicitan? *<select name="Solicitantes" required><option value="" disabled selected>Selecciona</option><option>Solo yo</option><option>Mi pareja y yo</option><option>Familia completa</option></select></label></div>
+<div><label>Paquete de interés *<select name="Paquete de interés" required><option value="" disabled selected>Selecciona</option><option>Expediente base — $79</option><option>Pareja / familia completa — $149</option><option>No estoy seguro</option></select></label></div></div>
+<label>¿Ya tienes la lista de documentos de tu lender?<select name="¿Ya tiene la lista del lender?"><option value="" disabled selected>Selecciona</option><option>Sí, ya la tengo</option><option>No, todavía no</option></select></label>
+<label>Mensaje<textarea name="Mensaje" placeholder="Cuéntanos qué te pidió tu lender y qué documentos ya tienes…"></textarea></label>
+<button class="submit" type="submit">Enviar mi solicitud →</button>
+<p style="text-align:center;color:var(--muted);font-size:.86rem">Tu información llega al correo de la Consultoría pa' contactarte sobre este servicio.</p>
+</form>
+<p style="text-align:center">¿Prefieres hablar primero? <a href="tel:+12406590154"><strong>240-659-0154</strong></a> · Consultoría Omar Cruz, Hyattsville, MD</p></section>
+</main></div>
+<footer><strong>Consultoría Omar Cruz</strong> · Organización y transcripción de documentos · Hyattsville, Maryland. Servicio privado: no asesora hipotecas, no cotiza préstamos, no llena ni somete aplicaciones de préstamo, no garantiza aprobación y no es asesoría legal.</footer>
+</body></html>
